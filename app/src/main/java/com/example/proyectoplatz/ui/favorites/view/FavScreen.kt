@@ -20,8 +20,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.proyectoplatz.bottomBar
 import com.example.proyectoplatz.topBar
 import com.example.proyectoplatz.ui.favorites.viewmodel.favorites
 import com.example.proyectoplatz.ui.home.view.addCard
@@ -42,7 +45,8 @@ fun FavScreen(navController: NavHostController) {
                     text = "Aún no tienes favoritos agregados",
                     modifier = Modifier.align(Alignment.Center),
                     color = Color.LightGray,
-                    fontStyle = FontStyle.Italic
+                    fontStyle = FontStyle.Italic,
+                    fontSize = 20.sp
                 )
             }
         } else{
